@@ -4,29 +4,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-
 (function($) {
 
 	var	$window = $(window),
 		$body = $('body');
-		candado1=0
-	}
-
-function abrircandado1() {
-			if candado1==471 {
-			<style>
-				.oculto {
-				display: block;
-				}
-			</style>
-			else {
-				<style>
-					.oculto {
-					display: none;
-					}
-				</style>
-			}
-	}
 
 	// Breakpoints.
 		breakpoints({
@@ -82,7 +63,5 @@ function abrircandado1() {
 					target: $body,
 					visibleClass: 'navPanel-visible'
 				});
-
-
 
 })(jQuery);
