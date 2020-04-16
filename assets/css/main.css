@@ -1407,7 +1407,8 @@ input, select, textarea {
 
 	.image {
 		position: relative;
-		display: inline-block;
+		display: block
+/* 		display: inline-block;*/ 
 	}
 
 		.image img {
