@@ -1408,8 +1408,7 @@ input, select, textarea {
 	.image {
 		position: relative;
 		display: block;
-		width: 100%;
-/* 		display: inline-block;*/
+/*	display: inline-block;*/
 	}
 
 		.image img {
