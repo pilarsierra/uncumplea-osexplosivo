@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML/CSS Towers of Hanoi</title>
+	<style type="text/css">
+		#hanoi
+		{
+			width: 450px;
+			height: 250px;
+			overflow: scroll;
+		}
+		div div
+		{
+			width: 0px;
+			height: 250px;
+		}
+		.base
+		{
+			width: 350px;
+			height: 25px;
+			background-color: #C4947A;
+			margin-top: 160px;
+			margin-left: 50px;
+		}
+		.stick1, .stick2, .stick3
+		{
+			width: 18px;
+			height: 125px;
+			background-color: #C4947A;
+			margin-top: -150px;
+			margin-left: 105px;
+		}
+		.stick2
+		{
+			margin-top: -125px;
+			margin-left: 216px;
+		}
+		.stick3
+		{
+			margin-top: -125px;
+			margin-left: 327px;
+		}
+		.disk1, .disk0
+		{
+			border-left: 24px solid #fff;
+			border-right: 24px solid #fff;
+			width: 60px;
+			height: 24px;
+			background-color: #C04100;
+		}
+		.disk2
+		{
+			border-left: 13px solid #fff;
+			border-right: 13px solid #fff;
+			width: 82px;
+			height: 24px;
+			background-color: #C0BB00;
+		}
+		.disk3
+		{
+			width: 108px;
+			height: 24px;
+			background-color: #12872B;
+		}
+		.x1
+		{
+			margin-left: 60px;
+		}
+		.x2
+		{
+			margin-left: 171px;
+		}
+		.x3
+		{
+			margin-left: 282px;
+		}
+		.buttons
+		{
+			width: 108px;
+			text-align: center;
+
+		}
+		.buttons a
+		{
+			padding-left: 5px;
+			padding-right: 5px;
+			font-size: 25px;
+			line-height: 29px;
+			text-decoration: none;
+			color: #000;
+			font-weight: bold;
+		}
+		.buttons a:hover
+		{
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div style="position: absolute; margin-left: 410px; width: 60px; height: 250px; background-color: #fff"></div>
+	<div style="position: absolute; margin-top: 210px; width: 460px; height: 60px; background-color: #fff"></div>
+	<div id="hanoi">
+		<div id="h321000000">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk1"></div><div class="disk2"></div><div class="disk3"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h320100000">&#x25B6;</a></div><div class="buttons" style="margin-top: -250px; visibility: hidden;"></div></div>
+<div id="h320100000">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div><div class="disk3"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h321000000">&#x25C0;</a><a href="#h320000100">&#x25B6;</a></div></div>
+<div id="h310200000">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk3"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h300210000">&#x25B6;</a></div><div class="buttons x2" style="margin-top: -250px"><a href="#h310000200">&#x25B6;</a></div></div>
+<div id="h210300000">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk2"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h200310000">&#x25B6;</a></div><div class="buttons x2" style="margin-top: -250px"><a href="#h210000300">&#x25B6;</a></div></div>
+<div id="h300210000">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk2"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h310200000">&#x25C0;</a><a href="#h300200100">&#x25B6;</a></div></div>
+<div id="h200310000">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk3"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h210300000">&#x25C0;</a><a href="#h200300100">&#x25B6;</a></div></div>
+<div id="h100320000">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div><div class="disk3"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h000321000">&#x25B6;</a></div><div class="buttons x2" style="margin-top: -250px"><a href="#h100300200">&#x25B6;</a></div></div>
+<div id="h000321000">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk1"></div><div class="disk2"></div><div class="disk3"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h100320000">&#x25C0;</a><a href="#h000320100">&#x25B6;</a></div></div>
+<div id="h320000100">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div><div class="disk3"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h300200100">&#x25B6;</a></div><div class="buttons" style="margin-top: -250px; visibility: hidden;"></div><div class="buttons x3" style="margin-top: -250px"><a href="#h320100000">&#x25C0;</a></div></div>
+<div id="h300200100">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h320000100">&#x25C0;</a></div><div class="buttons x3" style="margin-top: -250px"><a href="#h300210000">&#x25C0;</a></div></div>
+<div id="h200300100">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h000320100">&#x25B6;</a></div><div class="buttons" style="margin-top: -250px; visibility: hidden;"></div><div class="buttons x3" style="margin-top: -250px"><a href="#h200310000">&#x25C0;</a></div></div>
+<div id="h000320100">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div><div class="disk3"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h200300100">&#x25C0;</a></div><div class="buttons x3" style="margin-top: -250px"><a href="#h000321000">&#x25C0;</a></div></div>
+<div id="h310000200">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk3"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h300100200">&#x25B6;</a></div><div class="buttons" style="margin-top: -250px; visibility: hidden;"></div><div class="buttons x3" style="margin-top: -250px"><a href="#h310200000">&#x25C0;</a></div></div>
+<div id="h300100200">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h310000200">&#x25C0;</a><a href="#h300000210">&#x25B6;</a></div></div>
+<div id="h100300200">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h000310200">&#x25B6;</a></div><div class="buttons" style="margin-top: -250px; visibility: hidden;"></div><div class="buttons x3" style="margin-top: -250px"><a href="#h100320000">&#x25C0;</a></div></div>
+<div id="h000310200">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk3"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h100300200">&#x25C0;</a><a href="#h000300210">&#x25B6;</a></div></div>
+<div id="h210000300">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk2"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h200100300">&#x25B6;</a></div><div class="buttons" style="margin-top: -250px; visibility: hidden;"></div><div class="buttons x3" style="margin-top: -250px"><a href="#h210300000">&#x25C0;</a></div></div>
+<div id="h200100300">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h210000300">&#x25C0;</a><a href="#h200000310">&#x25B6;</a></div></div>
+<div id="h100200300">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h000210300">&#x25B6;</a></div><div class="buttons x2" style="margin-top: -250px"><a href="#h100000320">&#x25B6;</a></div></div>
+<div id="h000210300">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk2"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h100200300">&#x25C0;</a><a href="#h000200310">&#x25B6;</a></div></div>
+<div id="h300000210">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk2"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h000300210">&#x25B6;</a></div><div class="buttons" style="margin-top: -250px; visibility: hidden;"></div><div class="buttons x3" style="margin-top: -250px"><a href="#h300100200">&#x25C0;</a></div></div>
+<div id="h000300210">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk3"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk2"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h300000210">&#x25C0;</a></div><div class="buttons x3" style="margin-top: -250px"><a href="#h000310200">&#x25C0;</a></div></div>
+<div id="h200000310">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk3"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h000200310">&#x25B6;</a></div><div class="buttons" style="margin-top: -250px; visibility: hidden;"></div><div class="buttons x3" style="margin-top: -250px"><a href="#h200100300">&#x25C0;</a></div></div>
+<div id="h000200310">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div><div class="disk3"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h200000310">&#x25C0;</a></div><div class="buttons x3" style="margin-top: -250px"><a href="#h000210300">&#x25C0;</a></div></div>
+<div id="h100000320">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div><div class="disk3"></div></div><div class="buttons x1" style="margin-top: -180px;"><a href="#h000100320">&#x25B6;</a></div><div class="buttons" style="margin-top: -250px; visibility: hidden;"></div><div class="buttons x3" style="margin-top: -250px"><a href="#h100200300">&#x25C0;</a></div></div>
+<div id="h000100320">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk1"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk2"></div><div class="disk3"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons x2" style="margin-top: -250px"><a href="#h100000320">&#x25C0;</a><a href="#h000000321" onclick="verpista()">&#x25B6;</a></div></div>
+<div id="h000000321">&nbsp;<div class="base"></div><div class="stick1"></div><div class="stick2"></div><div class="stick3"></div><div style="margin-left: 60px; margin-top: -72px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 171px; margin-top: -250px;"><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div><div class="disk0" style="visibility: hidden"></div></div><div style="margin-left: 282px; margin-top: -250px;"><div class="disk1"></div><div class="disk2"></div><div class="disk3"></div></div><div class="buttons x1" style="margin-top: -180px; visibility: hidden;"></div><div class="buttons" style="margin-top: -250px; visibility: hidden;"></div><div class="buttons x3" style="margin-top: -250px"><a href="#h000100320">&#x25C0;</a></div></div>
+	</div>
+
+		<script>
+		function verpista()
+		{
+			document.getElementById("solucion").style.visibility="visible"
+			}
+		</script>
+
+<content id="solucion" style="visibility:hidden"><p>¡Enhorabuena, lo resolviste! La siguiente letra es la R.<br>Busca en la pesa más grande, tiene un compartimento secreto con <br>la pista para abrir la cuarta maleta.</p></content>
+<p>HTML/CSS only Towers of Hanoi created by Rom&aacute;n Cort&eacute;s</a></p>
+<a href="" onclick=location.reload()>Empezar de nuevo</a>
+</body>
+</html>
