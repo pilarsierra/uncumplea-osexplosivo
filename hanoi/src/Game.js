@@ -45,7 +45,7 @@ Game.Hanoi.prototype =
         box_size.style.height = this.game.height + 'px';
 
         //Crear botones
-// Pilar: quito botón de resolver y de restore
+
         var x = 148, y = 540;
 
 
