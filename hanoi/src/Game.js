@@ -345,7 +345,7 @@ Game.Hanoi.prototype =
                 };
 
                 var stWin  = this.add.text(25, 50, '¡CONSEGUIDO! Letra R. Siguiente pista en la pesa de 50 kg.', style);
-                stWin.fontSize = '30px';
+                stWin.fontSize = '24px';
                 stWin.addColor("#FFFFFF", 0);
               //  stWin.addColor("#ff0000", 0);
                 stWin.fixedToCamera = true;
@@ -490,7 +490,7 @@ Game.Hanoi.prototype =
                 };
 
                 var stWin  = this.add.text(25, 50, '¡CONSEGUIDO! Letra R. Siguiente pista en la pesa de 50 kg.', style);
-                stWin.fontSize = '22px';
+                stWin.fontSize = '24px';
                 stWin.addColor("#FFFFFF", 0);
                 stWin.fixedToCamera = true;
                 stWin.alpha = 0;
