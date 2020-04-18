@@ -48,7 +48,6 @@ Game.Hanoi.prototype =
 
         var x = 148, y = 540;
 
-
         this._buttonSolve = this.add.button(x, y, 'button', this.clickSolve, this, 0, 1, 2);
         this._buttonSolve.name = 'Solve';
         this._buttonSolve.scale.set(2, 1.5);
@@ -346,7 +345,7 @@ Game.Hanoi.prototype =
                 };
 
                 var stWin  = this.add.text(25, 50, '¡CONSEGUIDO! Letra R. Siguiente pista en la pesa de 50 kg.', style);
-                stWin.fontSize = '22px';
+                stWin.fontSize = '30px';
                 stWin.addColor("#FFFFFF", 0);
               //  stWin.addColor("#ff0000", 0);
                 stWin.fixedToCamera = true;
