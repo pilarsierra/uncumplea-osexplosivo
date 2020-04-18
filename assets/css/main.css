@@ -1240,11 +1240,7 @@ input, select, textarea {
 
 		}
 
-/* Iframe añadido por pilar*/
-		.myIframe{
-		max-width: 100%;
-		max-height: 100%;
-		}
+
 
 /* Section/Article */
 
@@ -2047,6 +2043,7 @@ input, select, textarea {
 				font-size: 10.75pt;
 			}
 
+
 			input, select, textarea {
 				line-height: 1.75em;
 				font-size: 10.75pt;
@@ -2107,6 +2104,10 @@ input, select, textarea {
 
 			html, body {
 				overflow-x: hidden;
+			}
+
+			iframe {
+				max-width: 100%;
 			}
 
 		/* Box */
@@ -2358,6 +2359,10 @@ input, select, textarea {
 				line-height: 1.75em;
 				font-size: 10pt;
 				letter-spacing: 0;
+			}
+
+			iframe {
+				max-width: 100%;
 			}
 
 			h2, h3, h4, h5, h6 {
