@@ -15,6 +15,21 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="no-sidebar is-preload">
+		<audio id="fondo" src="music/fondo.mp3" autoplay loop></audio>
+		<script>
+			var audio = document.getElementById("fondo");
+			audio.volume = 0.05;
+
+			function pararfondo(){
+				audio.volume = 0;
+			}
+
+			function activarfondo(){
+				audio.volume = 0.05;
+			}
+
+		</script>
+
 		<div id="page-wrapper">
 
 			<!-- Header Wrapper -->
@@ -92,7 +107,7 @@
 											<img class="image" src="images/notamaleta1.jpg" alt=""</><br>
 											<p><br>“¡Esta mujer es retorcida de verdad!” piensas mientras pulsas el botón de play…</p>
 
-											<audio controls>
+											<audio controls onplay="pararfondo()" onpause="activarfondo()">
 											    <source src="music/sing1.ogg" type="audio/ogg">
 											    <source src="music/sing1.mp3" type="audio/mpeg">
 											    <source src="music/sing1.wav" type="audio/wav">
@@ -100,31 +115,31 @@
 											<b> &nbsp&nbsp&nbsp&nbsp&nbsp 2 &nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" class="colorado" maxlength="1"> <input type="text" size="1" maxlength="1">  &nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1">  &nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> </b><br><br>
 											<!--<b> &nbsp&nbsp&nbsp&nbsp&nbsp__  &nbsp&nbsp__ __ __ __ __ ... __  &nbsp&nbsp__ __  &nbsp&nbsp__ __ __ __ __ __ __ __ </b><br><br>
 											<!--<input type="text" size="1" maxlength="1"><b1><input type="text" size="1" maxlength="1"></b1>-->
-											<audio controls>
+											<audio controls onplay="pararfondo()" onpause="activarfondo()">
 											    <source src="music/sing2.ogg" type="audio/ogg">
 											    <source src="music/sing2.mp3" type="audio/mpeg">
 											    <source src="music/sing2.wav" type="audio/wav">
 											</audio>
 											<b> &nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1">  &nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> &nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> &nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" class="colorado" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> </b><br><br>
-											<audio controls>
+											<audio controls onplay="pararfondo()" onpause="activarfondo()">
 											    <source src="music/sing3.ogg" type="audio/ogg">
 											    <source src="music/sing3.mp3" type="audio/mpeg">
 											    <source src="music/sing3.wav" type="audio/wav">
 											</audio>
 											<b> &nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> &nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> &nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> &nbsp&nbsp&nbsp<input type="text" size="1" class="colorado" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> </b><br><br>
-											<audio controls>
+											<audio controls onplay="pararfondo()" onpause="activarfondo()">
 											    <source src="music/sing4.ogg" type="audio/ogg">
 											    <source src="music/sing4.mp3" type="audio/mpeg">
 											    <source src="music/sing4.wav" type="audio/wav">
 											</audio>
 											<b> &nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" size="1" class="colorado" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> </b><br><br>
-											<audio controls>
+											<audio controls onplay="pararfondo()" onpause="activarfondo()">
 											    <source src="music/sing5.ogg" type="audio/ogg">
 											    <source src="music/sing5.mp3" type="audio/mpeg">
 											    <source src="music/sing5.wav" type="audio/wav">
 											</audio>
 											<b> &nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" class="colorado" maxlength="1"> &nbsp&nbsp&nbsp<input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> <input type="text" size="1" maxlength="1"> </b><br><br>
-											<audio controls>
+											<audio controls onplay="pararfondo()" onpause="activarfondo()">
 											    <source src="music/sing6.ogg" type="audio/ogg">
 											    <source src="music/sing6.mp3" type="audio/mpeg">
 											    <source src="music/sing6.wav" type="audio/wav">

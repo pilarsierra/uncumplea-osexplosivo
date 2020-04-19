@@ -15,6 +15,26 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="no-sidebar is-preload">
+		<!-- Fondo musical-->
+		<audio id="fondo" src="music/fondo.mp3" autoplay loop></audio>
+		<audio id="fondo3" src="music/fondo3.mp3"></audio>
+		<audio id="fondo2" src="music/fondo2.mp3" autoplay loop></audio>
+		<script>
+		var audio = document.getElementById("fondo");
+		var audio2 = document.getElementById("fondo2");
+		var audio3 = document.getElementById("fondo3");
+		audio.volume = 0.05;
+		audio2.volume = 0;
+
+		function cumple(){
+		audio.volume = 0;
+		audio2.volume = 0.05;
+		audio3.volume = 0.1;
+		audio3.play();
+
+		}
+
+		</script>
 		<div id="page-wrapper">
 
 			<!-- Header Wrapper -->
@@ -91,7 +111,7 @@
  											<div id="objeto5" style="visibility:hidden">
 											<p><br>Una puerta se abre… se oyen murmullos al otro lado. “¿Se ha desactivado la bomba o no?, piensas mientras te diriges corriendo a la puerta. Al cruzarla…</p>
 											<center>
-											<img class="image" src="images/puertaabierta.jpg" onclick="loveo52()" border=0</>
+											<img class="image" src="images/puertaabierta.jpg" onclick="loveo52() ;cumple()" border=0</>
 										</center>
 											<script>
 											function loveo52(){
@@ -115,8 +135,6 @@
 												<br><br>—	Pues llámala y que se venga. No va a tener Mairena suficiente para correr…
 
 												<br><br><h2>FIN</h2></p>
-
-
 											</div>
 										</div>
 										</article>
