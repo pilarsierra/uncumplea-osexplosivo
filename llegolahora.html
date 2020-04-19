@@ -16,20 +16,20 @@
 	</head>
 	<body class="no-sidebar is-preload">
 		<!-- Fondo musical-->
-		<audio id="fondo" src="music/fondo.mp3" autoplay loop></audio>
+		<audio id="fondo5" src="music/fondo5.mp3" autoplay loop></audio>
 		<audio id="fondo3" src="music/fondo3.mp3"></audio>
 		<audio id="fondo2" src="music/fondo2.mp3" autoplay loop></audio>
 		<script>
-		var audio = document.getElementById("fondo");
+		var audio = document.getElementById("fondo5");
 		var audio2 = document.getElementById("fondo2");
 		var audio3 = document.getElementById("fondo3");
-		audio.volume = 0.05;
+		audio.volume = 0.3;
 		audio2.volume = 0;
 
 		function cumple(){
 		audio.volume = 0;
-		audio2.volume = 0.05;
-		audio3.volume = 0.1;
+		audio2.volume = 0.1;
+		audio3.volume = 0.2;
 		audio3.play();
 
 		}
